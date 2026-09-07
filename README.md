@@ -1,12 +1,8 @@
 # CG-Grasp
 
-A deep-learning based robotic grasp detection framework built on PyTorch, supporting multiple network architectures and datasets for RGB-D grasp prediction.
+Code for the paper *Learning to Cluster: Improving the Accuracy and Convergence of Grasp Detection Models for Robotic Manipulation*.
 
-## Features
-
-- **Multiple grasp networks**: GG-CNN, GR-ConvNet family (grconvnet2/3/4), DSNet / DSNet-pro, SENet-based grasps, SKNet, Swin Transformer based models, FEC networks, dense attention (HGNet) and RGB-D fusion models.
-- **Multiple datasets**: Cornell, Jacquard, GraspNet, VMRD, CBRGD, multi-object clutter and custom real-world datasets.
-- **End-to-end pipeline**: dataset loading → training → evaluation → inference, with a hardware module for RGB-D camera capture and calibration.
+A deep-learning based robotic grasp detection framework built on PyTorch, providing training, evaluation and inference pipelines for RGB-D grasp prediction.
 
 ## Project layout
 
@@ -53,16 +49,3 @@ See `python train_network.py --help` for all options (dataset split, batch size,
 python evaluate.py --network grconvnet3 --dataset cornell \
     --dataset-path /path/to/Cornell --iou-threshold 0.25
 ```
-
-### Datasets
-
-Download scripts are provided for common datasets:
-
-```bash
-./utils/get_cornell.sh
-./utils/get_jacquard.sh
-```
-
-## Acknowledgements
-
-The codebase is inspired by public grasp-detection frameworks including [GG-CNN](https://github.com/dougsm/ggcnn) / [GR-ConvNet](https://github.com/skumra/robotic-grasping) research repositories.
