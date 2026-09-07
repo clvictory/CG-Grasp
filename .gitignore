@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Training output / logs / checkpoints
+logs/
+runs/
+checkpoints/
+*.pth
+*.pt
+*.onnx
+*.log
+
+# Datasets (downloaded via utils/get_*.sh)
+/datasets/
+/data/
+/Cornell/
+/Jacquard/
+/GraspNet/
+
+# OS
+.DS_Store
+Thumbs.db
